@@ -120,7 +120,7 @@
 		margin-top: 50px;
 	}
 
-	.product1 {
+	.product {
 
 		background: -webkit-linear-gradient(bottom,#d2d6da,#fcfcfd);
 		border: 1px solid #ceced0;
@@ -189,7 +189,6 @@
 		font-size: 17px;
 	}
 
-	
-
-
-
+.hide {
+    display: none;
+}

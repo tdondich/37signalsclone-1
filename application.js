@@ -1,32 +1,16 @@
 $(document).ready(function() {
 
-    $(".product1").hover(function() {
-		$(".wrapper").hover();
-		$("#basecamp").hover();
+    $(".product").hover(function() {
+        var selector = $(this).attr('data-target');
+        console.log("Hey, you hovered over a product!");
+        $('.header').hide();
+        $(selector).show();
+    }, function() {
+        var selector = $(this).attr('data-target');
+        console.log("Hey, you hovered OUT of the product.");
+         $('.header').hide();
+         $('#default').show();
     });
-	$(".product1").hover(function() {
-		$(".wrapper")();
-		$("#basecamp"));
-    });
-
-    $(".product2").hover(function() {
-		$(".wrapper")();
-		$("#highrise")();
-    });
-	$(".product2").hover(function() {
-		$(".wrapper")();
-		$("#highrise")();
-    });
-
-    $(".product3").hover(function() {
-		$(".wrapper")();
-		$("#campfire")();
-    });
-	$(".product3").hover(function() {
-		$(".wrapper")();
-		$("#campfire")();
-    });
-
 });	
 	
 
